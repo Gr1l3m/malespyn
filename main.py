@@ -71,12 +71,12 @@ if __name__ == '__main__':
     print(f"{encode4('tuani')=}")
     print(f"{encode5('tuani')=}")
     print(f"{encode6('tuani')=}")
-    print(timeit.timeit("encode('bueno')", number=1000000, setup="from __main__ import encode"))
-    print(timeit.timeit("encode2('bueno')", number=1000000, setup="from __main__ import encode2"))
-    print(timeit.timeit("encode3('bueno')", number=1000000, setup="from __main__ import encode3"))
-    print(timeit.timeit("encode4('bueno')", number=1000000, setup="from __main__ import encode4"))
-    print(timeit.timeit("encode5('bueno')", number=1000000, setup="from __main__ import encode5"))
-    print(timeit.timeit("encode6('bueno')", number=1000000, setup="from __main__ import encode6"))
+    # print(timeit.timeit("encode('bueno')", number=1000000, setup="from __main__ import encode"))
+    # print(timeit.timeit("encode2('bueno')", number=1000000, setup="from __main__ import encode2"))
+    # print(timeit.timeit("encode3('bueno')", number=1000000, setup="from __main__ import encode3"))
+    # print(timeit.timeit("encode4('bueno')", number=1000000, setup="from __main__ import encode4"))
+    # print(timeit.timeit("encode5('bueno')", number=1000000, setup="from __main__ import encode5"))
+    # print(timeit.timeit("encode6('bueno')", number=1000000, setup="from __main__ import encode6"))
 
     print(f"{encode('trabajo')=}")
     print(f"{encode2('trabajo')=}")
@@ -84,3 +84,43 @@ if __name__ == '__main__':
     print(f"{encode4('trabajo')=}")
     print(f"{encode5('trabajo')=}")
     print(f"{encode6('trabajo')=}")
+
+    # fuente: https://es.wikipedia.org/wiki/Malesp%C3%ADn
+    ejemplos = {
+    'eco': 'aquí',
+    'arpeni': 'hermano',
+    'binbolli' : 'tontillo',
+    'breteji': 'trabajo',
+    'cencinolli' : 'calzoncillo',
+    'cedane': 'cadena',
+    'cegá' : 'café',
+    'cetolli' : 'caballo',
+    'jincho': 'indio',
+    'chonendafe': 'Chinandega',
+    'cuñedi': 'cuñado',
+    'datres': 'detrás',
+    'Estelfi': 'Estelí',
+    'asconi': 'esquina',
+    'frenda': 'fuerte',
+    'guajolli' : 'viejillo',
+    'machín': 'indio',
+    'Masaya': 'Masachuset',
+    'Matagalpa': 'Mataplenfi',
+    'men' : 'pan',
+    'mafe': 'pega',
+    'mlebe' : 'plata',
+    'nafri' : 'negro',
+    'nelfes': 'nalgas',
+    'niche': 'noche',
+    'pelis' : 'malos',
+    'benefia': 'penefue',
+    'perbacoye' : 'mantequilla',
+    'percedi': 'mercado',
+    'perone' : 'marina',
+    'tuanis' : 'buenos',
+    }
+
+    for palabra in ejemplos.values():
+        print(encode6(palabra))
+    for palabra in ejemplos.keys():
+        print(encode6(palabra))
